@@ -21,7 +21,7 @@ ul {
 ul {
   padding-left: 0px;
 }
-img{
+img {
   display: block;
 }
 /*-------------------------------------------------- body------------------------------------------------------------------- */
@@ -159,9 +159,9 @@ body {
 }
 .about-hero .list {
   display: flex;
-
-  align-items: center;
+  gap: 24px;
 }
+
 .caption-texts {
   font-weight: 500;
   font-size: 20px;
@@ -192,14 +192,12 @@ body {
   background-color: var(--f4f4fd);
 }
 .hero-team .list {
-  
   display: flex;
   gap: 24px;
 }
 
 .team-caption {
-  
-  padding-top:120px;
+  padding-top: 120px;
   margin-bottom: 72px;
   font-weight: 700;
   font-size: 36px;
@@ -210,7 +208,6 @@ body {
   color: var(--navy-blue);
 }
 .our-employees {
-  
   text-align: center;
   padding-top: 32px;
   padding-bottom: 8px;
@@ -222,7 +219,6 @@ body {
   color: var(--navy-blue);
 }
 .empl-comment {
-  
   padding-bottom: 32px;
   font-size: 16px;
   line-height: 1.5;
@@ -236,7 +232,6 @@ body {
   border-radius: 0px 0px 4px 4px;
 }
 .footer {
-  
   /* outline: 4px solid tomato; */
   padding-top: 100px;
   padding-bottom: 100px;
@@ -355,7 +350,6 @@ body {
   /* outline: 4px solid tomato; */
 }
 .btn-container {
-  
   /* outline: 4px solid tomato; */
   justify-content: center;
   display: flex;
@@ -364,7 +358,7 @@ body {
   padding-bottom: 75px;
   align-items: center;
 }
-.bottom-text{
+.bottom-text {
   border: 1px solid var(--e7e9fc);
   border-top: none;
 }
