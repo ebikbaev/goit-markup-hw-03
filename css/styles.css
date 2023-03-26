@@ -21,6 +21,9 @@ ul {
 ul {
   padding-left: 0px;
 }
+img{
+  display: block;
+}
 /*-------------------------------------------------- body------------------------------------------------------------------- */
 body {
   background-color: var(--white);
@@ -81,13 +84,13 @@ body {
 }
 .address .link.link:not(:last-child) {
   margin-right: 40px;
-  background-color: tomato;
+  /* background-color: tomato; */
 }
 .link-header {
   display: block;
   padding-top: 24px;
   padding-bottom: 24px;
-  background-color: tomato;
+  /* background-color: tomato; */
   margin-right: 40px;
 }
 .link-header:not(:last-child) {
@@ -150,7 +153,7 @@ body {
 
 /*-------------------------------------------------- section2------------------------------------------------------------------- */
 .about-hero {
-  outline: 4px solid orange;
+  /* outline: 4px solid orange; */
   padding-top: 120px;
   padding-bottom: 120px;
 }
@@ -227,6 +230,8 @@ body {
   border-radius: 0px 0px 4px 4px;
 }
 .footer {
+  
+  /* outline: 4px solid tomato; */
   padding-top: 100px;
   padding-bottom: 100px;
   background-color: var(--navy-blue);
@@ -275,14 +280,16 @@ body {
   color: #434455;
 }
 .btn {
+  border-radius: 4px;
+  border-color: transparent;
+  padding: 12px 24px;
+
   font-family: "Roboto", sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
-  display: flex;
-  align-items: center;
-  text-align: center;
+
   letter-spacing: 0.04em;
   color: var(--iris);
   cursor: pointer;
@@ -302,7 +309,7 @@ body {
   display: flex;
   align-items: center;
 
-  outline: 5px solid teal;
+  /* outline: 5px solid teal; */
 }
 .container {
   margin: 0 auto;
@@ -314,7 +321,7 @@ body {
   margin-left: auto;
 }
 .section-container {
-  outline: 2px solid brown;
+  /* outline: 2px solid brown; */
   padding-top: 188px;
   padding-bottom: 188px;
   text-align: center;
@@ -328,15 +335,30 @@ body {
 
 .work-hero {
   padding-bottom: 120px;
-  outline: 4px solid tomato;
+  /* outline: 4px solid tomato; */
 }
-.hero-team {
+/* .hero-team {
   outline: 4px solid tomato;
-}
+} */
+
 /* portfolio */
 .photo-container {
   display: flex;
-  gap: 48px 18px;
+  gap: 48px 24px;
   flex-wrap: wrap;
-  outline: 4px solid tomato;
+  /* outline: 4px solid tomato; */
+}
+.btn-container {
+  
+  /* outline: 4px solid tomato; */
+  justify-content: center;
+  display: flex;
+  gap: 24px;
+  padding-top: 93px;
+  padding-bottom: 75px;
+  align-items: center;
+}
+.bottom-text{
+  border: 1px solid var(--e7e9fc);
+  border-top: none;
 }
