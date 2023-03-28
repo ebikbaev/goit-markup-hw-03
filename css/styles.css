@@ -24,6 +24,19 @@ ul {
 img {
   display: block;
 }
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
 /*-------------------------------------------------- body------------------------------------------------------------------- */
 body {
   background-color: var(--white);
@@ -82,7 +95,7 @@ body {
 .header-contacts:focus {
   color: var(--ocean);
 }
-.address .link.link:not(:last-child) {
+.address.link:not(:last-child) {
   margin-right: 40px;
   /* background-color: tomato; */
 }
@@ -91,7 +104,6 @@ body {
   padding-top: 24px;
   padding-bottom: 24px;
   /* background-color: tomato; */
-  margin-right: 40px;
 }
 .link-header:not(:last-child) {
   margin-right: 40px;
@@ -113,7 +125,10 @@ body {
 }
 
 /*-------------------------------------------------- section1------------------------------------------------------------------- */
-.hero-container {
+.hero-section {
+  padding-top: 188px;
+  padding-bottom: 188px;
+  text-align: center;
   background: var(--navy-blue);
 }
 .hero-text-title {
@@ -161,7 +176,9 @@ body {
   display: flex;
   gap: 24px;
 }
-
+.caption-list{
+  flex-basis: calc((100%-3*24)/4);
+}
 .caption-texts {
   font-weight: 500;
   font-size: 20px;
@@ -188,6 +205,7 @@ body {
 }
 /*-------------------------------------------------- section4------------------------------------------------------------------- */
 .hero-team {
+  padding-top: 120px;
   padding-bottom: 120px;
   background-color: var(--f4f4fd);
 }
@@ -197,7 +215,7 @@ body {
 }
 
 .team-caption {
-  padding-top: 120px;
+  
   margin-bottom: 72px;
   font-weight: 700;
   font-size: 36px;
@@ -219,7 +237,7 @@ body {
   color: var(--navy-blue);
 }
 .empl-comment {
-  padding-bottom: 32px;
+  
   font-size: 16px;
   line-height: 1.5;
   text-align: center;
@@ -228,6 +246,7 @@ body {
 }
 /*-------------------------------------------------- section4------------------------------------------------------------------- */
 .hero-li {
+  padding-bottom: 32px;
   background-color: var(--white);
   border-radius: 0px 0px 4px 4px;
 }
@@ -238,6 +257,7 @@ body {
   background-color: var(--navy-blue);
 }
 .footer-logo {
+  
   font-family: "Raleway", sans-serif;
   font-style: normal;
   font-weight: 800;
@@ -254,9 +274,9 @@ body {
 .footer-comment {
   width: 264px;
   text-align: start;
-  padding-top: 16px;
+  margin-top: 16px;
   font-size: 16px;
-  line-height: 1.17;
+  line-height: 1.5;
   letter-spacing: 0.02em;
   color: var(--e7e9fc);
 }
@@ -309,7 +329,7 @@ body {
 .header {
   display: flex;
   align-items: center;
-
+border-bottom: 1px solid var(--e7e9fc);
   /* outline: 5px solid teal; */
 }
 .container {
@@ -323,9 +343,6 @@ body {
 }
 .section-container {
   /* outline: 2px solid brown; */
-  padding-top: 188px;
-  padding-bottom: 188px;
-  text-align: center;
 }
 .work-hero .list {
   display: flex;
